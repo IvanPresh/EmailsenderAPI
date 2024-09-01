@@ -1,0 +1,49 @@
+2024-08-31 14:28:16.491 -07:00 [ERR] something happened
+System.InvalidOperationException: Failed to send email
+ ---> System.Net.Sockets.SocketException (0x00002AF9): No such host is known.
+   at System.Net.Dns.GetHostEntryOrAddressesCore(String hostName, Boolean justAddresses, AddressFamily addressFamily, Nullable`1 startingTimestamp)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress, AddressFamily family)
+   at MailKit.Net.SocketUtils.Connect(String host, Int32 port, IPEndPoint localEndPoint, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.Connect(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at EmailsenderAPI.Services.EmailService.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Services\EmailService.cs:line 43
+   --- End of inner exception stack trace ---
+   at EmailsenderAPI.Services.EmailService.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Services\EmailService.cs:line 60
+   at EmailsenderAPI.Controllers.EmailController.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Controllers\EmailController.cs:line 25
+2024-08-31 14:29:05.912 -07:00 [ERR] something happened
+System.InvalidOperationException: Failed to send email
+ ---> MailKit.Net.Smtp.SmtpCommandException: Service not available
+   at MailKit.Net.Smtp.SmtpClient.PostConnect(Stream stream, String host, Int32 port, SecureSocketOptions options, Boolean starttls, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at EmailsenderAPI.Services.EmailService.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Services\EmailService.cs:line 43
+   --- End of inner exception stack trace ---
+   at EmailsenderAPI.Services.EmailService.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Services\EmailService.cs:line 60
+   at EmailsenderAPI.Controllers.EmailController.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Controllers\EmailController.cs:line 25
+2024-08-31 14:29:07.256 -07:00 [ERR] something happened
+System.InvalidOperationException: Failed to send email
+ ---> MailKit.Net.Smtp.SmtpCommandException: Service not available
+   at MailKit.Net.Smtp.SmtpClient.PostConnect(Stream stream, String host, Int32 port, SecureSocketOptions options, Boolean starttls, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at EmailsenderAPI.Services.EmailService.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Services\EmailService.cs:line 43
+   --- End of inner exception stack trace ---
+   at EmailsenderAPI.Services.EmailService.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Services\EmailService.cs:line 60
+   at EmailsenderAPI.Controllers.EmailController.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Controllers\EmailController.cs:line 25
+2024-08-31 14:29:08.371 -07:00 [ERR] something happened
+System.InvalidOperationException: Failed to send email
+ ---> MailKit.Net.Smtp.SmtpCommandException: Service not available
+   at MailKit.Net.Smtp.SmtpClient.PostConnect(Stream stream, String host, Int32 port, SecureSocketOptions options, Boolean starttls, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at EmailsenderAPI.Services.EmailService.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Services\EmailService.cs:line 43
+   --- End of inner exception stack trace ---
+   at EmailsenderAPI.Services.EmailService.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Services\EmailService.cs:line 60
+   at EmailsenderAPI.Controllers.EmailController.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Controllers\EmailController.cs:line 25
+2024-08-31 14:49:06.846 -07:00 [ERR] An error occurred while sending the email: Failed to send email
+System.InvalidOperationException: Failed to send email
+ ---> MailKit.Net.Smtp.SmtpCommandException: Service not available
+   at MailKit.Net.Smtp.SmtpClient.PostConnect(Stream stream, String host, Int32 port, SecureSocketOptions options, Boolean starttls, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at EmailsenderAPI.Services.EmailService.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Services\EmailService.cs:line 43
+   --- End of inner exception stack trace ---
+   at EmailsenderAPI.Services.EmailService.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Services\EmailService.cs:line 60
+   at EmailsenderAPI.Controllers.EmailController.SendEmail(EmailDTO emailDTO) in C:\Users\PRECIOUS IVAN\source\repos\EmailsenderAPI\EmailsenderAPI\Controllers\EmailController.cs:line 30
